@@ -1,0 +1,152 @@
+.footer {
+  padding: 8rem 0 3rem;
+  background: $veryDarkCyan;
+
+  @include breakpoint-up(medium) {
+    padding: 12rem 0 3rem;
+  }
+
+  a {
+    color: white;
+  }
+
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    @include breakpoint-up(medium) {
+      padding-left: 4rem;
+      padding-right: 3rem;
+    }
+  }
+
+  &__logo {
+    img {
+      width: 10.75rem;
+
+      @include breakpoint-up(medium) {
+        width: 14rem;
+      }
+    }
+  }
+
+  &__container {
+    margin: 1.75rem auto;
+    grid-template-columns: 1fr;
+
+    @include breakpoint-up(medium) {
+      grid-template-columns: 2fr repeat(3, 1fr);
+    }
+
+    .footer__desc:first-child {
+      img {
+        align-self: start;
+        margin-top: 0.5rem;
+      }
+    }
+  }
+
+  &__content {
+    width: auto;
+    margin-bottom: 3rem;
+
+    @include breakpoint-up(medium) {
+      width: 80%;
+      margin-bottom: 0;
+    }
+  }
+
+  &__desc {
+    grid-template-columns: 0.1fr 1fr;
+
+    @include breakpoint-up(medium) {
+      grid-template-columns: 0.085fr 1fr;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 1.25rem;
+    }
+
+    p {
+      color: white;
+      font-size: 0.95rem;
+
+      @include breakpoint-up(medium) {
+        font-size: 0.975rem;
+      }
+    }
+  }
+
+  &__links {
+    flex-direction: column;
+
+    a {
+      font-size: 1.075rem;
+      margin-bottom: 1.25rem;
+      transition: all 300ms ease-in-out;
+
+      @include breakpoint-up(medium) {
+        margin-bottom: 0;
+
+        &:not(:last-child) {
+          margin-bottom: 1.25rem;
+        }
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__social {
+    margin-top: 2rem;
+    align-items: center;
+    justify-self: center;
+
+    @include breakpoint-up(medium) {
+      margin-top: 0;
+      justify-self: start;
+    }
+
+    a {
+      svg {
+        path {
+          transition: all 300ms ease-in-out;
+        }
+      }
+
+      &:hover {
+        svg path {
+          fill: $pink;
+        }
+      }
+
+      &:not(:last-child) {
+        margin-right: 1rem;
+
+        @include breakpoint-up(medium) {
+          margin-right: 1.25rem;
+        }
+      }
+    }
+  }
+
+  &__copy {
+    font-size: 0.8rem;
+    text-align: center;
+    font-family: $heading-font;
+
+    @include breakpoint-up(medium) {
+      text-align: right;
+    }
+  }
+
+  &__attribution {
+    color: white;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.875rem;
+    font-family: $heading-font;
+  }
+}
