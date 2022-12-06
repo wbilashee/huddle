@@ -305,4 +305,48 @@ button:hover::before,
 }
 .features .feature__card__image img {
   width: 100%;
+}
+
+.ready__to__build {
+  width: 90%;
+  padding: 2.5rem 0;
+  position: relative;
+  text-align: center;
+  background: white;
+  border-radius: 1rem;
+  margin: auto 1rem -4rem;
+  box-shadow: 0 0 10px rgba(154, 160, 185, 0.5);
+}
+@media (min-width: 48em) {
+  .ready__to__build {
+    padding: 3rem;
+    width: 46.75rem;
+    border-radius: 0.625rem;
+    margin: auto auto -6rem;
+  }
+}
+.ready__to__build h1 {
+  font-size: 1.075rem;
+  margin-bottom: 1.75rem;
+}
+@media (min-width: 48em) {
+  .ready__to__build h1 {
+    font-size: 1.875rem;
+    margin-bottom: 2.5rem;
+  }
+}
+.ready__to__build .button {
+  font-size: 0.9375rem;
+  border-radius: 2.5rem;
+  padding: 0.75rem 2.5rem;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.35);
+}
+.ready__to__build .button::before {
+  border-radius: 2.5rem;
+}
+@media (min-width: 48em) {
+  .ready__to__build .button {
+    font-size: 1.125rem;
+    padding: 1.45rem 6rem;
+  }
 }/*# sourceMappingURL=style.css.map */
