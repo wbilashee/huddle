@@ -19,7 +19,7 @@ body {
   font-family: $base-font;
 
   @include breakpoint-up(medium) {
-    font-size: 1.125rem;
+    font-size: 1.075rem;
   }
 }
 

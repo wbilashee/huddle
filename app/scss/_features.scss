@@ -1,0 +1,73 @@
+.features {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 2.5rem auto;
+
+  @include breakpoint-up(medium) {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin: 7.5rem auto;
+  }
+
+  .feature__card {
+    padding: 2.5rem 2rem;
+    border-radius: 1rem;
+    margin-bottom: 2.75rem;
+    grid-template-columns: 1fr;
+    box-shadow: 0 0 10px rgba(154, 160, 185, 0.5);
+    row-gap: 2.5rem;
+
+    @include breakpoint-up(medium) {
+      padding: 3rem 2rem 3rem 3rem;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include breakpoint-up(large) {
+      padding: 3rem 2rem 3rem 6.75rem;
+    }
+
+    &__text {
+      text-align: center;
+
+      @include breakpoint-up(medium) {
+        text-align: left;
+      }
+
+      h2 {
+        font-size: 1.175rem;
+
+        @include breakpoint-up(medium) {
+          font-size: 1.5em;
+        }
+      }
+
+      p {
+        font-size: 0.875rem;
+        margin-top: 0.75rem;
+
+        @include breakpoint-up(medium) {
+          font-size: 1.075rem;
+        }
+      }
+    }
+
+    &__image {
+      order: -1;
+      width: 100%;
+
+      @include breakpoint-up(medium) {
+        order: 1;
+        width: 75%;
+        justify-self: end;
+
+        &:nth-child(1) {
+          justify-self: start;
+        }
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
